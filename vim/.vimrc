@@ -1164,3 +1164,7 @@ nnoremap <esc> :noh<return><esc>
 
 "Map for splitting a bash terminal
 nnoremap <C-c> :ConqueTermSplit bash<CR>
+
+"Map for buffers
+nnoremap <C-h> :bprev<CR>
+nnoremap <C-l> :bnext<CR>
