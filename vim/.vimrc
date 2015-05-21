@@ -1153,3 +1153,11 @@
         endif
     endif
 " }
+
+" CUSTOM COMMANDS 
+
+"Map escape key to jj -- much faster"
+imap jj <esc>
+
+"Map escape key to clear last search highlighting"
+nnoremap <esc> :noh<return><esc>
