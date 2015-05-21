@@ -1161,3 +1161,6 @@ imap jj <esc>
 
 "Map escape key to clear last search highlighting"
 nnoremap <esc> :noh<return><esc>
+
+"Map for splitting a bash terminal
+nnoremap <C-c> :ConqueTermSplit bash<CR>
