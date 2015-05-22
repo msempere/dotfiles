@@ -1,2 +1,5 @@
-# dotfiles
-My dotfiles (vim / bash etc.)
+dotfiles
+===================
+
+* VIM 
+*  i3
