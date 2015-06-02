@@ -91,7 +91,7 @@
     " In your .vimrc.before.local file
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
-        let g:spf13_bundle_groups=['general', 'writing', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc', 'antlr', 'ansible', 'erlang']
+        let g:spf13_bundle_groups=['general', 'writing', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'go', 'javascript', 'html', 'misc', 'antlr', 'ansible', 'erlang']
     endif
 
     " To override all the included bundles, add the following to your
@@ -282,8 +282,9 @@
 
     " Go Lang {
         if count(g:spf13_bundle_groups, 'go')
-            "Bundle 'Blackrush/vim-gocode'
+            Bundle 'jnwhiteh/vim-golang'
             Bundle 'fatih/vim-go'
+            let g:go_fmt_command = "goimports"
         endif
     " }
 
