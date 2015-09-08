@@ -1162,6 +1162,8 @@ imap jj <esc>
 "Map escape key to clear last search highlighting"
 nnoremap <esc> :noh<return><esc>
 
-"Map for buffers
-nnoremap <C-h> :bprev<CR>
-nnoremap <C-l> :bnext<CR>
+"Jump n buffers right
+:nnoremap <C-l> :<C-u>execute "bn" . v:count1<CR> 
+
+"Jump n buffers left
+:nnoremap <C-h> :<C-u>execute "bp" . v:count1<CR> 
